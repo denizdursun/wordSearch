@@ -16,11 +16,6 @@ import org.apache.pdfbox.text.PDFTextStripper;
  * @author Deniz
  */
 public class Reader{
-    //String content;
-
-    /*Reader() throws IOException {
-        this.content = new String(Files.readAllBytes(Paths.get("test.txt")));
-    }*/
   
    public String pdfTextStripper(String pdfPath) throws Exception {
         File initialFile = new File(pdfPath);
@@ -50,7 +45,6 @@ public class Reader{
         String content = "";
         if (sb.toString() != null) {
             content = new String(sb.toString().getBytes());
-            //System.out.println(content);
         }
         
         //content boşlukları alır
